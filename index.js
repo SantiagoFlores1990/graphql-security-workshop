@@ -19,8 +19,15 @@ const typeDefs = `#graphql
     secretData: String
   }
 `;
-const users = [{ id: '1', name: 'Franklin' }];
-const posts = [{ id: '101', title: 'Mi primer post', authorId: '1' }];
+//2.- Datos de ejemplo
+const users = [
+    { id: '1', name: 'Frankklin'},
+    { id: '2', name: 'Santiago'},
+];
+const posts = [
+    { id: '1', title: 'GraphQL Security', authorId: '1'},
+    { id: '2', title: 'GraphQL Best Practices', authorId: '2'},
+];
 // 2. Resolvers (Con validación de Auth)
 const resolvers = {
   Query: {
